@@ -59,8 +59,11 @@ function copyToClipboard(e) {
 ### Stretch Goals
 
 → light color scheme + switch
+
 → ability to set password length
+
 ~~→ add ‘copy-on-click~~
+
 → Toggle ‘symbols’ and ‘nummers’ on-off
 
 ### Useful resources

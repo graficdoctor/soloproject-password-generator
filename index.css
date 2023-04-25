@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--neutral-950: hsl(0, 0%, 11%);
+	--neutral-800: hsl(215, 28%, 17%);
+	--neutral-750: hsl(215, 30%, 22%);
+	--neutral-700: hsl(215, 28%, 25%);
+
+	--green-600: hsl(160, 84%, 39%);
+	--green-500: hsl(144, 70%, 58%);
+	--color-white: hsl(0, 0%, 100%);
+}
+
+body {
+	background-color: var(--neutral-950);
+	color: var(--color-white);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.container {
+	width: 550px;
+	height: 550px;
+	background-color: var(--neutral-800);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  padding: 3em;
+  line-height: 0.9;
+}
+
+h1 {
+	font-family: 'Karla', sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+.color-text {
+  color: var(--green-500);
+}
+
+p {
+  margin-top: 0.5em;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-white);
+  background-color: var(--green-600);
+  border: none;
+  margin-top: 3.125em;
+  padding: 0.5em 1rem;
+  border-radius: 6px;
+  transition: color ease-in 0.2s;
+  transition: background-color ease-in 0.2s;
+}
+
+.btn:hover, .btn:focus {
+  color: var(--neutral-800);
+}
+
+.btn:active {
+  background-color: var(--color-white);
+  color: var(--green-600);
+}
+
+hr {
+  color: var(--neutral-700);
+  margin: 2em 0;
+}
+
+.output-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px;
+  gap: 24px;
+  justify-items: center;
+}
+
+.outputfield {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 211px;
+  height: 40px;
+  background-color: var(--neutral-750);
+  border-radius: 6px;
+  color:hsl(144, 70%, 58%);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 4px;
+  margin-top: 0;
+}
+
+
+
